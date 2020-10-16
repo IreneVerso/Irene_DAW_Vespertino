@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<script>
+<!--1. Escriba una función JavaScript que invierta un número-->
+function invertirNumero(x){
+  let array = Array.from(x);
+  array = array.reverse();
+  x = Number(array.join(''));
+  return x;
+}
+
+
+<!--2. Escribir una función de JavaScript que genere todas las combinaciones de una cadena.-->
+function ej2(){
+var cadena=prompt("Dame una cadena");
+for(let i = 0 ;i< cadena.length;i++){
+  for(let o = i+1 ; o<= cadena.length;o++){
+    document.write(cadena.substring(i,o));
+    document.write("<br>");
+  }
+}
+}
+<!--3. Escriba una función JavaScript que devuelva una cadena pasada con letras en orden alfabético-->
+
+function ej3(){
+let cadena = prompt("Dame una cadena");
+let cadenaOrdenada = array.from(cadena)
+cadenaOrdenada.sort;
+}
+console.log(invertirNumero(12345));
+function ej4(){
+  var cadena = prompt ("Dame una cadena");
+  var array = cadena.split("");
+  var contador = 0;
+  var cualera=0;
+  for(let i = 0; i< array.length;i++){
+  if(contador < array[i].length)
+  contador = array[i].length;
+  cualera = i;}
+alert(array[cualera]);
+
+}
+function ej5(s){
+  var cadena = prompt("Dame una cadena");
+  var numeroVocales = 0;
+    for(var i = 0; i<cadena.length;i++){
+      if((/^[aeiou]$/i).test(cadena.charAt(i)) == true){
+      numeroVocales++;
+    }
+    }
+    document.write("Hay "+numeroVocales+" vocales");
+}
+function ej6(){
+    var cadena = prompt("Dame una cadena");
+    document.write(typeof cadena);
+}
+ej6();
+</script>
+</html>
